@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        h1 {
+            position: relative;  
+            /*lấy chính nó làm gốc*/
+            top: 100px;   /*từ cái gốc cho top = 100px thì bị đẩy xuống dưới đè lên chữ khác*/
+            left: 50px;
+        }
+        .box {
+            width: 100%;
+            height: 120px;
+            background-color: green;
+            position: relative;
+        }
+        .box-child {
+            width: 50px;
+            height: 50px;
+            background-color: peru;
+            
+            position: absolute; /*tìm position thẻ cha gần nhất nó lấy nó làm gốc*/
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-child"></div>
+    </div>
+    <h1>Position</h1>
+    <ul>
+        <li>Relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+    </ul>
+</body>
+</html>

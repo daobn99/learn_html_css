@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- <style>
+        h1 {
+            color: red;
+            font-size: 30px;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div>
+        <h1 id="first_heading">CSS in HTML</h1>
+        <!--id chỉ được dùng một lần nếu trùng tên, còn trùng tên mà dùng nhiều lần thì dùng class-->
+        <h1 class="second">CSS in HTML</h1>
+        <h1 class="second">CSS in HTML</h1>
+        <h1 class="second">CSS in HTML</h1>
+        <ol>
+            <li>Internal</li> <!--viet thang vao file html bang the style-->
+            <li>External</li> <!--tao file .css-->
+            <li>Inline</li> <!--viet thang css vao cac the-->
+        </ol>
+    </div>
+    <h1 class="center">This heading will not be affected</h1>
+    <p class="center">This paragraph will be red and center-aligned.</p>
+
+    <h1 class="heading">nguyen van dao</h1>
+    <h1 class="title heading">nguyen van dao</h1>
+    <h1 class="title">nguyen van dao</h1>
+    <h1 class="title">nguyen van dao</h1>
+    <div class="box">
+        <div>
+            <h1 class="title">class1 .class2 (có dấu cách, class2 là thẻ nằm trong class 1)</h1>
+        </div>
+    </div>
+    <br><div>------------</div><br>
+    <!-- đặt biến cho css-->
+    <h1 class="bien">CSS Variable</h1>
+</body>
+
+</html>
+
+
+<!-- Cách link file css
+- nếu file css ở  /current/folder1/css/style.css
+html ở            /current/folder2/location/index.html
+thì dùng   href="../../second/folder/style.css"
+để ý file index.html khi lùi lại 2 folder thì về folder "current"
+từ folder current -> folder1 -> css -> mở file style.css
+do đó cần phải ../.. 2 lần để lùi lại 2 folder  -->
+
+
+<!-- mức độ ưu tiên (inline > id > class > tag (h1, h2, p...) > * ) -->

@@ -1,0 +1,101 @@
+/*
+Ôn tập về css selector
+    #nav li : chọn tất cả thằng li BÊN TRONG (inside) thằng nav
+    #nav li a : chọn tất cả thằng a BÊN TRONG li BÊN TRONG nav
+    #nav>li>a : chọn tất cả thằng a là con trực tiếp của li, li là con trực tiếp của nav
+    #nav li > a : chọn tất cả thằng a là con trực tiếp li BÊN TRONG nav
+*/
+/* reset css */
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;  /*cái tự chỉnh kích thước khi có padding border*/
+}
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* 
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, vuông...)
+*/
+#main {
+    
+}
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+}
+
+#nav {
+    
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    /*thẻ li display là list items nên hàng dọc, cần chuyển inline-block để thành hàng ngang*/
+    /* display: inline-block;    */
+    position: relative;
+    list-style: none;
+}
+
+#nav > li > a {     /*chọn thẳng thẻ a là con li là con nav (mấy thẻ a ở subnav kiểu là cháu, ko phải con trực tiếp)*/
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    /* color: #fff; */
+    text-decoration: none;   /*gạch chân*/
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: inline-block;  /* thẻ a mặc định là inline (kích thước là auto x auto), ko có kích thước nên ko hover đc, pải đổi inline-block thì mới có kích thước cố định */
+
+}
+
+#nav > li:hover > a {      
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav {             /* chú ý có dấu cách*/
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position:absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav .subnav a {    /* để mỗi .subnav a cũng đc, nhưng sau này mà có thêm class subnav khác thì thằng đó cũng bị ảnh hưởng*/
+    color: #000;
+}
+
+#silder {
+    height: 500px;
+    /* background-color: #333; */
+}
+
+#content {
+    
+}
+
+#footer {
+    
+}

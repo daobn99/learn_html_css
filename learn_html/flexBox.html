@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            margin: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .flexContainer {
+            padding-left: 0px;  /*thẻ li có padding mặc định là 40px ??*/
+            display: flex;
+            flex-direction: row-reverse;
+            /* flex-wrap: wrap; */
+        }
+        .flexItem {
+            width: 150px;
+            height: 150px;
+        }
+        .flexItem_a{background-color: #eea ;}
+        .flexItem_b{background-color: #eaa;}
+        .flexItem_c{background-color: #aae;}
+        .flexItem_d{background-color: #cce;}
+    </style>
+</head>
+<body>
+    <ul class="flexContainer">
+        <li class="flexItem flexItem_a">flex item A</li>
+        <li class="flexItem flexItem_b">flex item B</li>
+        <li class="flexItem flexItem_c">flex item C</li>
+        <li class="flexItem flexItem_d">flex item D</li>
+    </ul>
+</body>
+</html>

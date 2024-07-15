@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style2.css">
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+        .box2{
+            width: 50%;  /*co giãn màn hình thì size cũng thay đổi*/
+            height: 100px;
+            background-color: red;
+        }
+        html {
+            font-size: 100%;   /*mặc định là 16px*/
+        }
+        h1 {
+            font-size: 4rem;   /* 4 rem = 16x4 = 64px */
+        }
+        .box3 {
+            width: 70vw;
+            height: 20vh;
+            background-color: aqua;
+        }
+        .box3:hover {
+            background-color: black;
+        }
+        h1::first-letter {
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+    <h1>CSS Units</h1>
+    <h2>1. Absolute units</h2>
+    <ul>
+        <li>px</li>
+        <li>pt</li>
+        <li>cm</li>
+        <li>mm</li>
+        <li>inch</li>
+        <li>pc</li>
+    </ul>
+    <h2>2. Relative units</h2>
+    <ul>
+        <li>%</li>   
+        <li>rem     (phụ thuộc vào thẻ html)</li>  <!---->
+        <li>em (phụ thuộc vào thẻ gần nhất (ít dùng hơn rem))</li>
+        <li>vw (1 vw = 1% bề ngang trình duyệt)</li>
+        <li>vh (1 vh = 1% bề dọc trình duyệt)</li>
+
+    </ul>
+</body>
+</html>
