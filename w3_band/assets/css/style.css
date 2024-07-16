@@ -31,7 +31,7 @@ html {
 }
 
 #nav {
-    
+    display: inline-block;
 }
 
 #nav > li {
@@ -85,6 +85,28 @@ html {
 
 #nav .subnav a {    /* để mỗi .subnav a cũng đc, nhưng sau này mà có thêm class subnav khác thì thằng đó cũng bị ảnh hưởng*/
     color: #000;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
 }
 
 #silder {
