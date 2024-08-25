@@ -12,7 +12,7 @@
             background-color: rebeccapurple;
         }
         .box2{
-            width: 50%;  /*co giãn màn hình thì size cũng thay đổi*/
+            width: 50%;  /*do thẻ chứa box2 gần nhất là thẻ body, mà body chiều ngang bằng trình duyệt, nên là 50% trình duyệt*/
             height: 100px;
             background-color: red;
         }
@@ -36,9 +36,9 @@
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
+    <div class="box">box</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
 
     <h1>CSS Units</h1>
     <h2>1. Absolute units</h2>
@@ -52,12 +52,12 @@
     </ul>
     <h2>2. Relative units</h2>
     <ul>
-        <li>%</li>   
+        <li>% (phụ thuộc vào thẻ gần nhất chứa nó)</li>   
         <li>rem     (phụ thuộc vào thẻ html)</li>  <!---->
         <li>em (phụ thuộc vào thẻ gần nhất (ít dùng hơn rem))</li>
-        <li>vw (1 vw = 1% bề ngang trình duyệt)</li>
-        <li>vh (1 vh = 1% bề dọc trình duyệt)</li>
-
+        <li>vw (1 vw = 1% bề ngang trình duyệt, không quan tâm thẻ chứa nó kích thước bn)</li>
+        <li>vh (1 vh = 1% bề dọc trình duyệt.....)</li>
+        <!-- Tất cả đơn vị tương đối đều cần nơi để nó phụ thuộc -->
     </ul>
 </body>
 </html>

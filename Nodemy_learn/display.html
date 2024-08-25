@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        p {
+            display: inline-block; /*thẻ p mặc định là block*/
+            background: green;
+
+        }
+        span {
+            display: block;
+            width: 100px;
+            background: red;
+        }
+
+
+        .nav li{
+            display: inline-block;
+            width: 60px;
+            height: 25px;
+            background: #000;
+            color: white;
+            text-align: center;
+            line-height: 25px ;
+        }
+    </style>
+</head>
+<body>
+    <p>welcome</p>
+    <span>span1</span>  <!--thẻ span không có css mặc định gì-->
+    <span>span2</span>
+    <ul class="nav">
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+    </ul>
+</body>
+</html>
+<!-- 
+- display = none : không hiển thị nội dung ra ngoài màn hình
+- block : dài nguyên một dòng và có thể width height
+- inline : chiều dài bằng đúng nội dung. Không thể dùng width height
+- inline-block : giống inline nhưng có thể width height
+-->

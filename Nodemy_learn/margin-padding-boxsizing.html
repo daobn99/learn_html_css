@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellowgreen;
+            text-align: center;
+            color: white;
+            
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 50%;
+        }
+        .nhap {
+            width: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box-sizing</div>    
+    <div class="container">
+        <input class="nhap" type="text">
+    </div>
+</body>
+</html>
+
+<!--box-sizing 
+ban đầu kích thước hộp 4 là 100x100, thêm padding và border vào 
+thì tổng kích thước tăng. Tuy nhiên khi có box-sizing border box
+thì kích thước ban đầu sẽ bị nén lại để tổng tất cả là 100x100
+
+trường hợp này thì do có padding 20px nên kích thước hộp bị nén 
+lại còn 60x60
+-->

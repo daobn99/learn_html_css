@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+    #nav li : chọn tất cả thằng li BÊN TRONG (inside) thằng nav (Phân biệt với con trực tiếp)
+    #nav li a : chọn tất cả thằng a BÊN TRONG li BÊN TRONG nav
+    #nav>li>a : chọn tất cả thằng a là con trực tiếp của li, li là con trực tiếp của nav (con trực tiếp là nằm bên trong tầng đầu tiên, tức là bên trong nav là li luôn chứ không được nav>nav2>li)
+    #nav li > a : chọn tất cả thằng a là con trực tiếp li BÊN TRONG nav
+
+    class1.class2 : chọn tất cả các dòng (thẻ) có cả class1 và class2 (dòng đó có thể có 10 class nhưng cứ có class 1 và 2 là ok)
+    element.class (h4.title) : chọn tất cả các thẻ h4 có class=title (ví dụ có nhiều class giống nhau mà chỉ muốn chọn riêng 1 cái class thì dùng)
+
+    Nói chung cứ có dấu cách thì thằng bên phải nằm trong thằng bên trái
+*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .title.heading {
+            color: red;
+        }
+
+        .box .title {
+            color: blue;
+        }
+
+        h4.title {
+            color: green;
+        }
+        .title2, .title3, .title4 {      /*trường hợp muốn css cho nhiều thẻ cùng một lúc mà không muốn viết lại nhiều lần có thể dùng dấu phẩy*/
+            color: blueviolet;
+        }
+
+        .container > .title {
+            color: aqua;
+        } 
+        .container .container2  {
+            color:burlywood;
+        } 
+    </style>
+</head>
+
+<body>
+    <h2 class="title heading">this is title</h2>
+    <h3 class="title heading heading 2">this is title</h3>
+    <h4 class="title">this is title</h4>
+
+    <div class="box">
+        <div>
+            <div>
+                <h2 class="title">this is title</h2>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title2">this is title2</h2>
+    <h2 class="title3">this is title3</h2>
+    <h2 class="title4">this is title4</h2>
+
+    <div class="container">
+        <h2 class="title">this is title</h2>  <!--title này là con trực tiếp của container-->
+        <div class="container2">
+            <h2 class="title">this is title</h2>
+        </div>
+    </div>
+</body>
+
+</html>
