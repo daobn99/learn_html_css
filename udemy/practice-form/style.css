@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    font-size: 62.5%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f1f1;;
+}
+
+.form {
+    width: 360px;
+    padding: 32px 24px;
+    /* height: 620px; */
+    min-height: 100px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+p {
+    color: rgb(99, 109, 119);
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1.6rem;
+}
+
+.spacer {
+    margin-top: 36px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    font-size: 1.4rem;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+}
+
+.form-group input {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;   /* search thêm gg, không có cái này thì khi nhấn vào ô điền, trình duyệt sẽ có mặc định cái bôi đen màu vàng quanh cái khung (macbook là màu vàng, windows màu xanh?)*/
+    /* margin-bottom: 16px ; */
+}
+
+.form-group input:hover {
+    border-color: #1dbfaf;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 12px 16px;
+    margin-top: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #1dbfaf;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.form-submit:hover {
+    background-color: #1ac7b6;
+}
+

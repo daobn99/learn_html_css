@@ -21,6 +21,20 @@
             display: flex;
 
         }
+
+        .box {
+            display: flex; /* xếp hàng ngang*/
+            list-style: none;
+        }
+        .box li {
+            width: 80px;
+            height: 40px;
+            background: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
     </style>
 </head>
 <body>
@@ -29,5 +43,11 @@
         <div class="nav">2</div>
         <div class="nav">3</div>
     </div>
+
+    <ul class="box">
+        <li>menu</li>
+        <li>search</li>
+        <li>login</li>
+    </ul>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn form</title>
+</head>
+<body>
+    <form action="/dsfkjsdf">
+        <!--for và id phải giống nhau để thể hiện sự 関連
+            Khi click vào label thì con trỏ tự động nhảy vào ô input nhập
+            http://127.0.0.1:5500/dsfkjsdf?username=daobn&password=12345&color=%23000000
+        -->
+        <div>
+            <label for="username">ユーザー名：</label>
+            <input id="username" type="text" placeholder="ユーザー名" name="username">
+        </div>
+        <div>
+            <label for="password">パスワード：</label>
+            <input id="password" type="password" placeholder="パスワード" name="password">
+        </div>
+        <div>
+            <label for="color">好きな色</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <button type="submit">送信</button>  
+        <!--nếu không có type thì mặc định type là submit (không viết cũng đc nhưng viết thì rõ ràng hơn)
+        Nhấn nút sẽ submit đến trang của action form-->
+    </form>
+    <hr>
+    <form action="https://www.google.co.jp/search">
+        <input style="width: 300px;" type="text" name="q" placeholder="ここに入力したキーワードをgoogle検索">
+        <button type="submit" >google検索</button>
+    </form>
+</body>
+
+</html>

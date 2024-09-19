@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    「セマンティック」とは、文の構造によってHTMLのタグを正しく使い分けることです。
+    HTML要素はページ内でどういう意味・役割を持っているか理解しやすい
+     例えば、「見出し」は<h1>タグ、ヘッダーは<header>タグを使用するなどです。
+    セマンティックなタグを使う理由：
+        1．サイトの検索順位が上がる
+　　　　　2．保守性が向上する（コードの可読性が上がる）
+    -->
+</head>
+
+<body>
+    <a href="https://zenn.dev/simizunomoto/articles/792b0988039496">đọc thêm セマンティックなタグの使い方</a>
+
+    <!-- 般的にサイトでよく見られるセマンティックなタグ -->
+    <header>
+        <nav>
+            <!-- header部分、ナビゲーションなど -->
+             <ul>
+                <li><a href="home">ホームへ</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact">contact</a></li>
+             </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section>
+                <figure>
+                    <img src="sauna.png" alt="サウナの画像">
+                    <figcaption>サウナの画像</figcaption>
+                </figure>
+            </section>
+            <section>
+                <!-- コンテンツ部分, 一つのまとまりの文章の部分に使用します。 -->
+            </section>
+            <section>
+                <!-- コンテンツ部分 -->
+            </section>
+        </article>
+    </main>
+    <aside>
+        <!-- サイドバー部分 -->
+    </aside>
+    <footer>
+        <!-- footer部分 -->
+    </footer>
+
+</body>
+
+</html>
+<!-- thực ra thích thì cứ dùng hết thẻ div cũng đc, nhưng khó hiểu và khó bảo trì -->
